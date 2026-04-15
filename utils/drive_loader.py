@@ -16,11 +16,11 @@ SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
 
 # IDs de archivos en Drive (completar después de subir los parquets)
 FILE_IDS: dict[str, str] = {
-    "agg_mensual": "",
-    "agg_dpto_anio": "",
-    "agg_eps_anio": "",
-    "agg_pretensiones_anio": "",
-    "geo_dptos": "",
+    "agg_mensual": "19fFyrCKPRr7IuRu7fvWGPPk8AW8MGCF7",
+    "agg_dpto_anio": "1qKkAtOWk9y0zTvXvoSuKFNxWhqHmXvdB",
+    "agg_eps_anio": "1-V5VItJRuQH8W-w0bwbRINyrOTnKfeut",
+    "agg_pretensiones_anio": "1hkjgGMGn8NNp_AusOlQw5UMRypYU_Q7E",
+    "geo_dptos": "1eoJ1bACAnW8lY8CDTbu7RKcDhh2ZU68H",
 }
 
 
