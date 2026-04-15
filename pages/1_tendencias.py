@@ -1,6 +1,6 @@
 import streamlit as st
 import plotly.express as px
-from utils.drive_loader import load_parquet
+from utils.data_loader import load_parquet
 
 st.title("📈 Tendencias temporales — 2019–2025")
 
