@@ -1,5 +1,6 @@
 import streamlit as st
 import plotly.express as px
+import pandas as pd
 from utils.data_loader import load_parquet
 
 st.title("📈 Tendencias temporales — 2019–2025")
@@ -27,6 +28,7 @@ fig = px.line(df_f, x="fecha", y="n_tutelas",
               labels={"fecha": "Mes", "n_tutelas": "Tutelas / mes"},
               template="plotly_white")
 for h in HITOS:
-    fig.add_vline(x=h["x"], line_dash="dash", line_color=h["color"],
+    fig.add_vline(x=pd.Timestamp(h["x"]).value // 10**6,
+                  line_dash="dash", line_color=h["color"],
                   annotation_text=h["label"])
 st.plotly_chart(fig, use_container_width=True)
